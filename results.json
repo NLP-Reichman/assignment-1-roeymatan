@@ -1,0 +1,32 @@
+{
+  "test_preprocess": {
+    "vocab_length": 1804
+  },
+  "test_lm": {
+    "english_2_gram_length": 748,
+    "english_3_gram_length": 8239,
+    "french_3_gram_length": 8286,
+    "spanish_3_gram_length": 8469
+  },
+  "test_eval": {
+    "en_en": 20.63914227910805,
+    "en_fr": 30.129241138677635,
+    "en_tl": 41.16750048328495,
+    "en_nl": 34.460637834219106
+  },
+  "test_match": {
+    "en_en_3": 9.36730202474014,
+    "en_tl_3": 21.419175124930742,
+    "en_nl_3": 19.3765759829939
+  },
+  "test_generate": {
+    "english_1_gram": "Itttt<end>",
+    "english_2_gram": "I amorararararararararar",
+    "english_3_gram": "I amist<end>",
+    "english_4_gram": "I Love my racebooks a lowe",
+    "spanish_2_gram": "Soycesu cesu cesu cesu ",
+    "spanish_3_gram": "Soy recombinos capor mi",
+    "french_2_gram": "Je suis:/tpa C'eus:/tpa C'e",
+    "french_3_gram": "Je suis sert crestestestest"
+  }
+}
