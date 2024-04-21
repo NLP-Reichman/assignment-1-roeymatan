@@ -90,21 +90,39 @@ def main():
 
     # Initialize the result variable
     result = None
+    # print(args)
+    # print(args.test)
 
     # Switch between the tests
-    match args.test:
-        case 'test_preprocess':
-            result = test_preprocess(results["test_preprocess"])
-        case 'test_lm':
-            result = test_lm(results["test_lm"])
-        case 'test_eval':
-            result = test_eval(results["test_eval"])
-        case 'test_match':
-            result = test_match(results["test_match"])
-        case 'test_generate':
-            result = test_generate(results["test_generate"])
-        case _:
-            print('Invalid test.')
+    if args.test == 'test_preprocess':
+        result = test_preprocess(results["test_preprocess"])
+    elif args.test == 'test_lm':
+        result = test_lm(results["test_lm"])
+    elif args.test == 'test_eval':
+        result = test_eval(results["test_eval"])
+    elif args.test == 'test_match':
+        result = test_match(results["test_match"])
+    elif args.test == 'test_generate':
+        result = test_generate(results["test_generate"])
+    else:
+        print('Invalid test.')
+
+
+
+
+    # match args.test:
+    #     case 'test_preprocess':
+    #         result = test_preprocess(results["test_preprocess"])
+    #     case 'test_lm':
+    #         result = test_lm(results["test_lm"])
+    #     case 'test_eval':
+    #         result = test_eval(results["test_eval"])
+    #     case 'test_match':
+    #         result = test_match(results["test_match"])
+    #     case 'test_generate':
+    #         result = test_generate(results["test_generate"])
+    #     case _:
+    #         print('Invalid test.')
 
     # Print the result for the autograder to capture
     if result is not None:
